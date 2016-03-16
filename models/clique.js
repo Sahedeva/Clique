@@ -11,7 +11,7 @@ var cliqueSchema = new mongoose.Schema({
   electronica: Boolean,
   jazz: Boolean,
   rock: Boolean,
-  classified: Boolean,
+  classical: Boolean,
   folk: Boolean,
   country_western: Boolean,
   trance: Boolean,
