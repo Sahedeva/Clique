@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Clique' });
 });
 
 /* GET user_form */
@@ -15,6 +15,11 @@ router.get('/user_form', function(req, res, next) {
 	clique = [{_id: 1, name:"SXSW"},{_id: 2, name:"I Love Hip-hop"},{_id: 3, name:"FolkFunk"}];
 	console.log(clique);
   	res.render('user_form', { title: 'User Form', clique: clique });
+});
+
+/* GET clique_form */
+router.get('/clique_form', function(req, res, next) {
+  res.render('clique_form', { title: 'Clique Form' });
 });
 
 /* POST user_form */
